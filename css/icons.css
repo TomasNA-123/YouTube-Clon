@@ -1,0 +1,84 @@
+.icon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-color: var(--font-gray);
+}
+.btn_icon{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: var(--font-gray);
+}
+.icon-bars{
+    -webkit-mask: url('../assets/icons/bars-solid.svg');
+    mask: url('../assets/icons/bars-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-points-vertical{
+    -webkit-mask: url('../assets/icons/ellipsis-vertical-solid.svg');
+    mask: url('../assets/icons/ellipsis-vertical-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-matriz{
+    -webkit-mask: url('../assets/icons/th-solid.svg');
+    mask: url('../assets/icons/th-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-user{
+    -webkit-mask: url('../assets/icons/user-solid.svg');
+    mask: url('../assets/icons/user-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-home{
+    -webkit-mask: url('../assets/icons/house-solid.svg');
+    mask: url('../assets/icons/house-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-explore{
+    -webkit-mask: url('../assets/icons/compass-solid.svg');
+    mask: url('../assets/icons/compass-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-youtube{
+    -webkit-mask: url('../assets/icons/youtube-brands.svg');
+    mask: url('../assets/icons/youtube-brands.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-ytSquare{
+    -webkit-mask: url('../assets/icons/youtube-square-brands.svg');
+    mask: url('../assets/icons/youtube-square-brands.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-historial{
+    -webkit-mask: url('../assets/icons/clock-rotate-left-solid.svg');
+    mask: url('../assets/icons/clock-rotate-left-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}

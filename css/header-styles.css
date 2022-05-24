@@ -1,0 +1,116 @@
+.header{
+    width: 100%;
+    height: 56px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left--side-control{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.header-left--logo{
+    width: 120px;
+    height: 56px;
+    padding: 18px 16px;
+}
+.header-left--logo img{
+    width: 88px;
+    height: auto;
+}
+
+.heaer--search-container{
+    width: 100%;
+    max-width: 728px;
+    /*margin-left: 40px;*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-input--input{
+    display: none;
+}
+.custom-input--btn-search{
+    width: 40px;
+    height: 40px;
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+.custom-input--btn-search:hover{
+    background-color: #f0f0f0;
+}
+.search-container--microphone{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.header--header-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-right--apps, .header-right--config{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn-login{
+    height: 40px;
+    padding: 0 10px;
+    background-color: white;
+    color: #065fd4;
+    font-weight: bold;
+    border: 1px solid #065fd4;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-login span{
+    margin-right: 5px;
+    background-color: #065fd4;
+}
+
+
+@media screen and (min-width: 655px) {
+    .heaer--search-container{
+        margin-left: 40px;
+        justify-content: unset;
+    }
+    .search-container--custom-input{
+        width: 100%;
+        max-width: 640px;
+        border: 1px solid var(--border-gray);
+        display: grid;
+        grid-template-columns: minmax(20px, 1fr) 64px;
+    }
+    .custom-input--input{
+        height: 40px;
+        padding-left: 5px;
+        border: none;
+        border-right: 1px solid var(--border-gray);
+        display: unset;
+    }
+    .custom-input--btn-search{
+        width: unset;
+        border-radius: unset;
+    }
+}

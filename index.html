@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/imgs/youtube-icon.png">
+    <title>MyTube</title>
+
+    <!--Custom css-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/video-columns.css">
+    <link rel="stylesheet" href="./css/header-styles.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/731176f93d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Dinamic sidebar-->
+    <div id="sidebar-exit-background" class="sidebar-exit-background d-none" onclick="toggle_sidebar()"></div>
+    <div id="main--main-sidebar__dinamic" class="main--main-sidebar__dinamic">
+        <div class="header--header-left">
+            <button class="header-left--side-control" aria-label="Control de sidebar" onclick="toggle_sidebar()"><span class="icon icon-bars"></span></button>
+            <a class="header-left--logo" href="#"><img src="./assets/imgs/youtube_logo.png" alt="Youtube logo"></a>
+        </div>
+        <nav class="main-sidebar--nav-sidebar">
+            <a class="nav-sidebar--link-nav active" href="#">
+                <span class="icon icon-home"></span>
+                <p>Principal</p>
+            </a>
+            <a class="nav-sidebar--link-nav" href="#">
+                <span class="icon icon-explore"></span>
+                <p>Explorar</p>
+            </a>
+            <a class="nav-sidebar--link-nav" href="#">
+                <span class="icon icon-youtube"></span>
+                <p>Shorts</p>
+            </a>
+            <a class="nav-sidebar--link-nav" href="#">
+                <span class="icon icon-ytSquare"></span>
+                <p>Suscripciones</p>
+            </a>
+            <hr>
+            <a class="nav-sidebar--link-nav" href="#">
+                <span class="icon icon-ytSquare"></span>
+                <p>Biblioteca</p>
+            </a>
+            <a class="nav-sidebar--link-nav" href="#">
+                <span class="icon icon-historial"></span>
+                <p>Historial</p>
+            </a>
+            <hr>
+            <div class="acces-section-sidebar">
+                <p>Accede para dar “Me gusta” a los videos, realizar comentarios y suscribirte.</p>
+                <button class="btn-login" aria-label="Login"><span class="btn_icon icon-user"></span> ACCEDER</button>
+            </div>
+            <hr>
+        </nav>
+    </div>
+
+    <header class="header">
+        <div class="header--header-left">
+            <button class="header-left--side-control" aria-label="Control de sidebar" onclick="toggle_sidebar()"><span class="icon icon-bars"></span></button>
+            <a class="header-left--logo" href="#"><img src="./assets/imgs/youtube_logo.png" alt="Youtube logo"></a>
+        </div>
+        <div class="heaer--search-container">
+            <div class="search-container--custom-input">
+                <input class="custom-input--input" type="text" placeholder="Buscar">
+                <button class="custom-input--btn-search" aria-label="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <button class="search-container--microphone" aria-label="Microfono"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+        <div class="header--header-right">
+            <button class="header-right--apps" aria-label="apps"><span class="icon icon-matriz"></span></button>
+            <button class="header-right--config" aria-label="Opciones"><span class="icon icon-points-vertical"></span></button>
+            <button class="btn-login" aria-label="Login"><span class="btn_icon icon-user"></span> ACCEDER</button>
+        </div>
+    </header>
+    <main id="main" class="main sidebar-lg">
+        <!--Normal sidebar-->
+        <div id="main--main-sidebar__sm" class="main--main-sidebar__sm">
+            <nav class="main-sidebar--nav-sidebar">
+                <a class="nav-sidebar--link-nav__sm" href="#">
+                    <span class="icon icon-home"></span>
+                    <p>Principal</p>
+                </a>
+                <a class="nav-sidebar--link-nav__sm" href="#">
+                    <span class="icon icon-explore"></span>
+                    <p>Explorar</p>
+                </a>
+                <a class="nav-sidebar--link-nav__sm" href="#">
+                    <span class="icon icon-youtube"></span>
+                    <p>Shorts</p>
+                </a>
+                <a class="nav-sidebar--link-nav__sm" href="#">
+                    <span class="icon icon-ytSquare"></span>
+                    <p>Suscripciones</p>
+                </a>
+                <a class="nav-sidebar--link-nav__sm" href="#">
+                    <span class="icon icon-ytSquare"></span>
+                    <p>Biblioteca</p>
+                </a>
+                <a class="nav-sidebar--link-nav__sm" href="#">
+                    <span class="icon icon-historial"></span>
+                    <p>Historial</p>
+                </a>
+            </nav>
+        </div>
+        <div id="main--main-sidebar__lg" class="main--main-sidebar__lg">
+            <nav class="main-sidebar--nav-sidebar">
+                <a class="nav-sidebar--link-nav active" href="#">
+                    <span class="icon icon-home"></span>
+                    <p>Principal</p>
+                </a>
+                <a class="nav-sidebar--link-nav" href="#">
+                    <span class="icon icon-explore"></span>
+                    <p>Explorar</p>
+                </a>
+                <a class="nav-sidebar--link-nav" href="#">
+                    <span class="icon icon-youtube"></span>
+                    <p>Shorts</p>
+                </a>
+                <a class="nav-sidebar--link-nav" href="#">
+                    <span class="icon icon-ytSquare"></span>
+                    <p>Suscripciones</p>
+                </a>
+                <hr>
+                <a class="nav-sidebar--link-nav" href="#">
+                    <span class="icon icon-ytSquare"></span>
+                    <p>Biblioteca</p>
+                </a>
+                <a class="nav-sidebar--link-nav" href="#">
+                    <span class="icon icon-historial"></span>
+                    <p>Historial</p>
+                </a>
+                <hr>
+                <div class="acces-section-sidebar">
+                    <p>Accede para dar “Me gusta” a los videos, realizar comentarios y suscribirte.</p>
+                    <button class="btn-login" aria-label="Login"><span class="btn_icon icon-user"></span> ACCEDER</button>
+                </div>
+                <hr>
+            </nav>
+        </div>
+        <div class="main--videos-container">
+            <section class="videos-container--main-categories">
+                <hr>
+                <div class="main-categories--categories-container">
+                    <a class="main-categories--categories-link active" href="#">Todos</a>
+                    <a class="main-categories--categories-link" href="#">Música</a>
+                    <a class="main-categories--categories-link" href="#">En tiempo real</a>
+                    <a class="main-categories--categories-link" href="#">Videojuegos</a>
+                </div>
+                <hr>
+            </section>
+            <section class="videos-container--main-videos">
+                <div class="main-videos--videos-container">
+                    <h2 class="videos-container--videos-title">Tendencias</h2>
+                    <div class="videos-container--videos-row">
+                        <div class="videos-row--video-content">
+                            <a class="video-content--preview-video" href="#">
+                                <figure class="preview-video--thumbnail">
+                                    <img src="https://picsum.photos/300" alt="Miniatura de video">
+                                    <span>10:00</span>
+                                </figure>
+                                <div class="preview-video--video-info">
+                                    <img class="video-info--user-image" src="./assets/imgs/youtube-icon.png" alt="Imagen de usuario">
+                                    <div class="video-info--text-viedo">
+                                        <p class="text-viedo--video-title">Titulo de video sobre algo interesante, el contenido te sorprendera   Titulo de video sobre algo interesante, el contenido te sorprendera</p>
+                                        
+                                        <p class="text-viedo--creator-name">Youtuber 123</p>
+                                        <p class="text-viedo--views-date">4M de visitas &#8226; hace 6 meses</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="videos-row--video-content">
+                            <a class="video-content--preview-video" href="#">
+                                <figure class="preview-video--thumbnail">
+                                    <img src="https://picsum.photos/300" alt="Miniatura de video">
+                                    <span>10:00</span>
+                                </figure>
+                                <div class="preview-video--video-info">
+                                    <img class="video-info--user-image" src="./assets/imgs/youtube-icon.png" alt="Imagen de usuario">
+                                    <div class="video-info--text-viedo">
+                                        <p class="text-viedo--video-title">Titulo de video sobre algo interesante, el contenido te sorprendera   Titulo de video sobre algo interesante, el contenido te sorprendera</p>
+                                        
+                                        <p class="text-viedo--creator-name">Youtuber 123</p>
+                                        <p class="text-viedo--views-date">4M de visitas &#8226; hace 6 meses</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="videos-row--video-content">
+                            <a class="video-content--preview-video" href="#">
+                                <figure class="preview-video--thumbnail">
+                                    <img src="https://picsum.photos/300" alt="Miniatura de video">
+                                    <span>10:00</span>
+                                </figure>
+                                <div class="preview-video--video-info">
+                                    <img class="video-info--user-image" src="./assets/imgs/youtube-icon.png" alt="Imagen de usuario">
+                                    <div class="video-info--text-viedo">
+                                        <p class="text-viedo--video-title">Titulo de video sobre algo interesante, el contenido te sorprendera   Titulo de video sobre algo interesante, el contenido te sorprendera</p>
+                                        
+                                        <p class="text-viedo--creator-name">Youtuber 123</p>
+                                        <p class="text-viedo--views-date">4M de visitas &#8226; hace 6 meses</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="videos-row--video-content">
+                            <a class="video-content--preview-video" href="#">
+                                <figure class="preview-video--thumbnail">
+                                    <img src="https://picsum.photos/300" alt="Miniatura de video">
+                                    <span>10:00</span>
+                                </figure>
+                                <div class="preview-video--video-info">
+                                    <img class="video-info--user-image" src="./assets/imgs/youtube-icon.png" alt="Imagen de usuario">
+                                    <div class="video-info--text-viedo">
+                                        <p class="text-viedo--video-title">Titulo de video sobre algo interesante, el contenido te sorprendera   Titulo de video sobre algo interesante, el contenido te sorprendera</p>
+                                        
+                                        <p class="text-viedo--creator-name">Youtuber 123</p>
+                                        <p class="text-viedo--views-date">4M de visitas &#8226; hace 6 meses</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="videos-row--video-content">
+                            <a class="video-content--preview-video" href="#">
+                                <figure class="preview-video--thumbnail">
+                                    <img src="https://picsum.photos/300" alt="Miniatura de video">
+                                    <span>10:00</span>
+                                </figure>
+                                <div class="preview-video--video-info">
+                                    <img class="video-info--user-image" src="./assets/imgs/youtube-icon.png" alt="Imagen de usuario">
+                                    <div class="video-info--text-viedo">
+                                        <p class="text-viedo--video-title">Titulo de video sobre algo interesante, el contenido te sorprendera   Titulo de video sobre algo interesante, el contenido te sorprendera</p>
+                                        
+                                        <p class="text-viedo--creator-name">Youtuber 123</p>
+                                        <p class="text-viedo--views-date">4M de visitas &#8226; hace 6 meses</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div> <!--/Video row-->
+                    <hr>
+                </div>                
+            </section>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
